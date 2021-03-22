@@ -1,9 +1,11 @@
 package com.luxoft.springioc.lab3.model;
 
+import org.springframework.stereotype.Service;
+
 public interface Person {
-    public void setName(String name);
-    public String getName();
-    public boolean isRegistered();
-	public void setRegistered(boolean isRegistered);
-    public void sayHello(Person person);
+    void setName(String name);
+    String getName();
+    boolean isRegistered();
+	void setRegistered(boolean isRegistered);
+    void sayHello(Person person);
 }
